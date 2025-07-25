@@ -31,5 +31,6 @@ dns
 exploit: Solo busca exploits conocidos.
 Ejemplo de uso
 bash
-   python advanced_scanner.py -t ejemplo.com -s all
+   
+    python advanced_scanner.py -t ejemplo.com -s all
 Esto analizará ejemplo.com buscando vulnerabilidades web, información DNS/subdominios y exploits.
