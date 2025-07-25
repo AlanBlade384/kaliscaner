@@ -16,3 +16,20 @@
 2. Instala los requisitos:
    ```bash
    pip install -r requirements.txt
+   ./install.sh
+Modo de uso
+bash
+
+    python advanced_scanner.py -t <objetivo> -s <tipo>
+-t o --target: Especifica el objetivo a analizar (puede ser dominio, IP o URL).
+-s o --scan-type: Selecciona el tipo de escaneo:
+all (predeterminado): Realiza todos los escaneos (web, red, exploits).
+web
+: Solo busca vulnerabilidades web.
+dns
+: Solo realiza análisis DNS y subdominios.
+exploit: Solo busca exploits conocidos.
+Ejemplo de uso
+bash
+   python advanced_scanner.py -t ejemplo.com -s all
+Esto analizará ejemplo.com buscando vulnerabilidades web, información DNS/subdominios y exploits.
